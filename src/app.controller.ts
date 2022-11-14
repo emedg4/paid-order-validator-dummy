@@ -6,7 +6,7 @@ export class AppController {
 
   @Get("validate")
   async validate(@Body() body:any) {
-    const num: number = await Math.floor(Math.random() * 10);
+    const num: number = await Math.floor(Math.random() * 11);
     const response: boolean = num == 10 ? true : false
 
     return response
