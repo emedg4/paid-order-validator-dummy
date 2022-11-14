@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  paid-order-validator:
+    container_name: paid-order-validator
+    build:
+      context: .
+    restart: always
+    ports:
+      - '4001:3000'
